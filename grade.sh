@@ -16,8 +16,8 @@ if [[ -f student-submission/ListExamples.java ]]
 then 
     #echo "you exist"
     cp TestListExamples.java ./student-submission
-    javac -cp $CPATH *.java
     cp -r student-submission/*.java grading-area
+    javac -cp $CPATH *.java
     if [ $? -eq 0 ]
     then
         echo "All tests passed"
